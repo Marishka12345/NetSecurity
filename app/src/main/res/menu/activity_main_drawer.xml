@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/opred"
+            android:icon="@drawable/ic_znak"
+            android:title="@string/opredel" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_raspr"
+            android:title="@string/raspr" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/ic_shit"
+            android:title="@string/how" />
+        <item
+            android:id="@+id/nav_setbes"
+            android:icon="@drawable/ic_shit2"
+            android:title="@string/setev" />
+        <item
+            android:id="@+id/nav_bezopmobil"
+            android:icon="@drawable/ic_mobil"
+            android:title="@string/mobil" />
+        <item
+            android:id="@+id/nav_sovetbez"
+            android:icon="@drawable/ic_sovet"
+            android:title="@string/tips" />
+    </group>
+</menu>
