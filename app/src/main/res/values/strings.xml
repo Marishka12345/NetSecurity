@@ -16,4 +16,9 @@
     <string name="setev">Сетевая безопасность</string>
     <string name="mobil">Безопасность мобильных устройств</string>
     <string name="tips">Советы по безопасности</string>
+    <string name="windows_10">Учётная запись ребёнка</string>
+    <string name="parent_control">Родительский контроль</string>
+    <string name="mobile">Мобильная безопасность</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

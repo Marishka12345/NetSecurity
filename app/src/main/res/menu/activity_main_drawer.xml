@@ -6,28 +6,36 @@
     <group
         android:checkableBehavior="single">
         <item
-            android:id="@+id/opred"
+            android:id="@+id/opredFragment3"
             android:icon="@drawable/ic_znak"
             android:title="@string/opredel" />
         <item
-            android:id="@+id/nav_gallery"
+            android:id="@+id/ugrozaFragment2"
             android:icon="@drawable/ic_raspr"
             android:title="@string/raspr" />
         <item
-            android:id="@+id/nav_slideshow"
+            android:id="@+id/protectFragment3"
             android:icon="@drawable/ic_shit"
             android:title="@string/how" />
         <item
-            android:id="@+id/nav_setbes"
-            android:icon="@drawable/ic_shit2"
+            android:id="@+id/setFragment2"
+            android:icon="@drawable/ic_set"
             android:title="@string/setev" />
         <item
-            android:id="@+id/nav_bezopmobil"
+            android:id="@+id/mobileFragment2"
             android:icon="@drawable/ic_mobil"
-            android:title="@string/mobil" />
+            android:title="@string/mobile" />
         <item
-            android:id="@+id/nav_sovetbez"
+            android:id="@+id/tipsFragment2"
             android:icon="@drawable/ic_sovet"
             android:title="@string/tips" />
+        <item
+            android:id="@+id/parent_controlFragment2"
+            android:icon="@drawable/ic_rodcont"
+            android:title="@string/parent_control" />
+        <item
+            android:id="@+id/userFragment2"
+            android:icon="@drawable/ic_windows"
+            android:title="@string/windows_10" />
     </group>
 </menu>

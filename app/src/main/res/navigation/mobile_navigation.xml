@@ -3,23 +3,46 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/nav_home">
+    app:startDestination="@id/opredFragment3">
 
     <fragment
-        android:id="@+id/nav_home"
-        android:name="com.example.netsecuirity.ui.home.HomeFragment"
-        android:label="@string/menu_home"
-        tools:layout="@layout/fragment_home" />
-
+        android:id="@+id/opredFragment3"
+        android:name="com.example.netsecuirity.OpredFragment"
+        android:label="fragment_opred"
+        tools:layout="@layout/fragment_opred" />
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="com.example.netsecuirity.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
-
+        android:id="@+id/ugrozaFragment2"
+        android:name="com.example.netsecuirity.UgrozaFragment"
+        android:label="fragment_ugroza"
+        tools:layout="@layout/fragment_ugroza" />
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.example.netsecuirity.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+        android:id="@+id/protectFragment3"
+        android:name="com.example.netsecuirity.ProtectFragment"
+        android:label="fragment_protect"
+        tools:layout="@layout/fragment_protect" />
+    <fragment
+        android:id="@+id/setFragment2"
+        android:name="com.example.netsecuirity.setFragment"
+        android:label="fragment_set"
+        tools:layout="@layout/fragment_set" />
+    <fragment
+        android:id="@+id/mobileFragment2"
+        android:name="com.example.netsecuirity.mobileFragment"
+        android:label="fragment_mobile"
+        tools:layout="@layout/fragment_mobile" />
+    <fragment
+        android:id="@+id/tipsFragment2"
+        android:name="com.example.netsecuirity.tipsFragment"
+        android:label="fragment_tips"
+        tools:layout="@layout/fragment_tips" />
+    <fragment
+        android:id="@+id/parent_controlFragment2"
+        android:name="com.example.netsecuirity.parent_controlFragment"
+        android:label="fragment_parent_control"
+        tools:layout="@layout/fragment_parent_control" />
+    <fragment
+        android:id="@+id/userFragment2"
+        android:name="com.example.netsecuirity.userFragment"
+        android:label="fragment_user"
+        tools:layout="@layout/fragment_user" />
 </navigation>
