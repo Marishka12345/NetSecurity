@@ -5,6 +5,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.viewpager.widget.PagerAdapter
+import kotlinx.android.synthetic.main.fragment_parent_control.*
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -27,6 +29,9 @@ class parent_controlFragment : Fragment() {
             param1 = it.getString(ARG_PARAM1)
             param2 = it.getString(ARG_PARAM2)
         }
+        val fragmentAdapter = MyPagerAdapter(supportFragmentManager)
+        viewpag.adapter = fragmentAdapter //viewpager как в main layout
+        tabs.setupWithViewPager(viewpag)// tabs как в main layout
     }
 
     override fun onCreateView(
@@ -35,7 +40,9 @@ class parent_controlFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_parent_control, container, false)
+
     }
+
 
     companion object {
         /**

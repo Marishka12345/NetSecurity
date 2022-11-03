@@ -21,17 +21,22 @@ class SplashActivity : AppCompatActivity() {
         window.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN)
 
         setContentView(R.layout.activity_splash)
-        planeta.startAnimation(AnimationUtils.loadAnimation(this,R.anim.rotate))
+        planeta.startAnimation(AnimationUtils.loadAnimation(this,R.anim.translate))
+        shtyki.startAnimation(AnimationUtils.loadAnimation(this,R.anim.rotate))
         Handler().postDelayed({
         //Задержка на 4 секунды
-        },1000)
+        },1500)
 
 
-            //Старт главной активности
+
+
+
+
+        //Старт главной активности
         Handler().postDelayed({
             startActivity(Intent(this@SplashActivity, MainActivity::class.java))
             //И остановка splash активности
             finish()
-        },6000)
+        },2000)
     }
 }

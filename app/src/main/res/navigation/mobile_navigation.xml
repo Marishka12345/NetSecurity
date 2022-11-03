@@ -8,41 +8,41 @@
     <fragment
         android:id="@+id/opredFragment3"
         android:name="com.example.netsecuirity.OpredFragment"
-        android:label="fragment_opred"
+        android:label="Определение и описание"
         tools:layout="@layout/fragment_opred" />
     <fragment
         android:id="@+id/ugrozaFragment2"
         android:name="com.example.netsecuirity.UgrozaFragment"
-        android:label="fragment_ugroza"
+        android:label="Распространение угрозы"
         tools:layout="@layout/fragment_ugroza" />
     <fragment
         android:id="@+id/protectFragment3"
         android:name="com.example.netsecuirity.ProtectFragment"
-        android:label="fragment_protect"
+        android:label="Как защитить личные данные"
         tools:layout="@layout/fragment_protect" />
     <fragment
         android:id="@+id/setFragment2"
         android:name="com.example.netsecuirity.setFragment"
-        android:label="fragment_set"
+        android:label="Сетевая безопасность"
         tools:layout="@layout/fragment_set" />
     <fragment
         android:id="@+id/mobileFragment2"
         android:name="com.example.netsecuirity.mobileFragment"
-        android:label="fragment_mobile"
+        android:label="Мобильная безопасность"
         tools:layout="@layout/fragment_mobile" />
     <fragment
         android:id="@+id/tipsFragment2"
         android:name="com.example.netsecuirity.tipsFragment"
-        android:label="fragment_tips"
+        android:label="Советы по безопасности"
         tools:layout="@layout/fragment_tips" />
     <fragment
         android:id="@+id/parent_controlFragment2"
         android:name="com.example.netsecuirity.parent_controlFragment"
-        android:label="fragment_parent_control"
+        android:label="Родительский контроль"
         tools:layout="@layout/fragment_parent_control" />
     <fragment
         android:id="@+id/userFragment2"
         android:name="com.example.netsecuirity.userFragment"
-        android:label="fragment_user"
+        android:label="Учётная запись ребёнка"
         tools:layout="@layout/fragment_user" />
 </navigation>

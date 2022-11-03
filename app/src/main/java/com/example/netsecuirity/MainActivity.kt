@@ -1,8 +1,10 @@
 package com.example.netsecuirity
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
+import android.view.View
 import android.widget.Toast
 import com.google.android.material.snackbar.Snackbar
 import com.google.android.material.navigation.NavigationView
@@ -14,6 +16,7 @@ import androidx.navigation.ui.setupWithNavController
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.appcompat.app.AppCompatActivity
 import com.example.netsecuirity.databinding.ActivityMainBinding
+import kotlinx.android.synthetic.main.fragment_parent_control.*
 
 class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
 
@@ -23,14 +26,14 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
+
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         setSupportActionBar(binding.appBarMain.toolbar)
 
         binding.appBarMain.fab.setOnClickListener { view ->
-            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                .setAction("Action", null).show()
+
         }
         val drawerLayout: DrawerLayout = binding.drawerLayout
         val navView: NavigationView = binding.navView
@@ -61,7 +64,16 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         when(item.itemId) {
 
             R.id.action_settings -> {
-                Toast.makeText(this, "127834", Toast.LENGTH_SHORT).show()
+
+                val randomIntent = Intent(this, AboutApp::class.java)
+                startActivity(randomIntent)
+
+            }
+            R.id.action_tp -> {
+
+                val randomIntent = Intent(this, tp::class.java)
+                startActivity(randomIntent)
+
             }
         }
         return super.onOptionsItemSelected(item)
@@ -124,5 +136,10 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             }
             else -> false
         }
+    }
+
+    fun teh(view: View) {
+        val randomIntent = Intent(this, tp ::class.java)
+        startActivity(randomIntent)
     }
 }

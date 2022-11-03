@@ -1,11 +1,12 @@
 package com.example.netsecuirity
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.example.netsecuirity.R
+import android.webkit.WebViewClient
+import androidx.fragment.app.Fragment
+import kotlinx.android.synthetic.main.fragment_tp.*
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -30,12 +31,20 @@ class OpredFragment : Fragment() {
         }
     }
 
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_opred, container, false)
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        WebView.webViewClient = WebViewClient()
+        WebView.loadUrl("file:///android_asset/opisanie.html")
+        WebView.settings.javaScriptEnabled = true
     }
 
     companion object {
