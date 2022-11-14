@@ -5,19 +5,12 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.viewpager.widget.PagerAdapter
 import kotlinx.android.synthetic.main.fragment_parent_control.*
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
+
 private const val ARG_PARAM1 = "param1"
 private const val ARG_PARAM2 = "param2"
 
-/**
- * A simple [Fragment] subclass.
- * Use the [parent_controlFragment.newInstance] factory method to
- * create an instance of this fragment.
- */
 class parent_controlFragment : Fragment() {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
@@ -38,24 +31,16 @@ class parent_controlFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_parent_control, container, false)
-        val fragmentAdapter = MyPagerAdapter(supportFragmentManager)
-        viewpag.adapter = fragmentAdapter //viewpager как в main layout
-        tabs.setupWithViewPager(viewpag)// tabs как в main layout
-
     }
 
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        val fragmentAdapter = MyPagerAdapter(childFragmentManager)
+        viewpag.adapter = fragmentAdapter //viewpager как в main layout
+        tabs.setupWithViewPager(viewpag)// tabs как в main layout
+    }
 
     companion object {
-        /**
-         * Use this factory method to create a new instance of
-         * this fragment using the provided parameters.
-         *
-         * @param param1 Parameter 1.
-         * @param param2 Parameter 2.
-         * @return A new instance of fragment parent_controlFragment.
-         */
-        // TODO: Rename and change types and number of parameters
-        @JvmStatic
         fun newInstance(param1: String, param2: String) =
             parent_controlFragment().apply {
                 arguments = Bundle().apply {

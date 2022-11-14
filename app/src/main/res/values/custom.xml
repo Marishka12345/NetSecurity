@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.Custom.NetSecuirity" parent="Theme.NetSecuirity">
+    <!-- Primary brand color. -->
+    <item name="colorPrimary">@drawable/gradient</item>
+    <item name="colorPrimaryVariant">@color/purple_700</item>
+    <item name="colorOnPrimary">@color/white</item>
+        <item name="colorPrimaryDark">@color/purple_500</item>
+    </style>
+</resources>

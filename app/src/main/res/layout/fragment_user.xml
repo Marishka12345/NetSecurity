@@ -5,8 +5,36 @@
     android:layout_height="match_parent"
     tools:context=".userFragment">
 
-    <WebView
-        android:id="@+id/WebView"
+    <View
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="1dp"
+        android:background="#EDCBCB" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab"
+        android:layout_width="match_parent"
+        android:layout_height="26dp"
+        android:visibility="invisible">
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Monday" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tuesday" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wednesday" />
+    </com.google.android.material.tabs.TabLayout>
 </FrameLayout>

@@ -4,9 +4,6 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
-import android.view.View
-import android.widget.Toast
-import com.google.android.material.snackbar.Snackbar
 import com.google.android.material.navigation.NavigationView
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
@@ -16,7 +13,7 @@ import androidx.navigation.ui.setupWithNavController
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.appcompat.app.AppCompatActivity
 import com.example.netsecuirity.databinding.ActivityMainBinding
-import kotlinx.android.synthetic.main.fragment_parent_control.*
+
 
 class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
 
@@ -27,14 +24,11 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         super.onCreate(savedInstanceState)
 
 
-        binding = ActivityMainBinding.inflate(layoutInflater)
+        binding = com.example.netsecuirity.databinding.ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         setSupportActionBar(binding.appBarMain.toolbar)
 
-        binding.appBarMain.fab.setOnClickListener { view ->
-
-        }
         val drawerLayout: DrawerLayout = binding.drawerLayout
         val navView: NavigationView = binding.navView
         val navController = findNavController(R.id.nav_host_fragment_content_main)
@@ -43,10 +37,11 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         appBarConfiguration = AppBarConfiguration(
             setOf(
                 R.id.opredFragment3, R.id.ugrozaFragment2, R.id.protectFragment3, R.id.setFragment2,R.id.mobileFragment2, R.id.tipsFragment2,
-                R.id.parent_controlFragment2, R.id.userFragment2
+                R.id.parent_controlFragment2, R.id.userFragment2, R.id.nopeFragment, R.id.testFragment
             ), drawerLayout
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
+        supportActionBar?.setBackgroundDrawable(resources.getDrawable(R.drawable.gradient))
         with(navView){
             setupWithNavController(navController)
             setNavigationItemSelectedListener(this@MainActivity)
@@ -73,7 +68,6 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
                 val randomIntent = Intent(this, tp::class.java)
                 startActivity(randomIntent)
-
             }
         }
         return super.onOptionsItemSelected(item)
@@ -134,12 +128,18 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                 drawerLayout.close()
                 true
             }
+            R.id.nopeFragment -> {
+                navController.navigate(R.id.nopeFragment)
+                drawerLayout.close()
+                true
+            }
+            R.id.testFragment -> {
+                navController.navigate(R.id.testFragment)
+                drawerLayout.close()
+                true
+            }
             else -> false
         }
     }
 
-    fun teh(view: View) {
-        val randomIntent = Intent(this, tp ::class.java)
-        startActivity(randomIntent)
-    }
 }

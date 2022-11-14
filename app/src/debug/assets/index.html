@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Тест</title>
+</head>
+<body>
+<div class="main">
+    <h1>Интернет-терроризм</h1>
+    <div id="result">
+        <label></label>
+    </div>
+    <div id="description">
+        <label>Данный тест поможет вам узнать, насколько хорошо вы знаете про интернет-терроризм.</label>
+    </div>
+    <div class="hidden quest" id="quest1">
+        <label>Что такое интернет - терроризм?</label>
+        <ul>
+            <li><input required name="quest1" type="radio" value="1">Любая деятельность, осуществляемая с использованием Интернета с целью уничтожения чего-либо ценного или отключения какой-либо услуги на ограниченный или неопределенный период времени.</li>
+            <li><input required name="quest1" type="radio" value="2">Борьба с сетью Интернет</li>
+            <li><input required name="quest1" type="radio" value="3">Сообщение от мамы</li>
+        </ul>
+    </div>
+    <div class="hidden quest" id="quest2">
+        <label>Угроза – это…</label>
+        <ul>
+            <li><input required name="quest2" type="radio" value="1">Система программных языковых организационных и технических средств</li>
+            <li><input required name="quest2" type="radio" value="2">Потенциальная возможность определенным образом нарушить информационную безопасность</li>
+            <li><input required name="quest2" type="radio" value="3">Безграничный мир информации, который дает широкие возможности для общения</li>
+        </ul>
+    </div>
+    <div class="hidden quest" id="quest3">
+        <label>Что не является способом мошенничества?</label>
+        <ul>
+            <li><input required name="quest3" type="radio" value="1">Кардинг</li>
+            <li><input required name="quest3" type="radio" value="2">Фишинг</li>
+            <li><input required name="quest3" type="radio" value="3">Техническая поддержка</li>
+        </ul>
+    </div>
+    <div class="hidden quest" id="quest4">
+        <label>Вредоносная программа - это…</label>
+        <ul>
+            <li><input required name="quest4" type="radio" value="1">Упорядочение абстракций, расположение их по уровням</li>
+            <li><input required name="quest4" type="radio" value="2">Назойливые или опасные программы, предназначенные для тайного доступа к устройству без ведома его владельца</li>
+            <li><input required name="quest4" type="radio" value="3">Элемент данных, используемый для идентификации</li>
+        </ul>
+    </div>
+    <div class="hidden quest" id="quest5">
+        <label>Что такое ZIP бомба?</label>
+        <ul>
+            <li><input required name="quest5" type="radio" value="1">Взрывчатое оружие</li>
+            <li><input required name="quest5" type="radio" value="2">Обработка информации</li>
+            <li><input required name="quest5" type="radio" value="3">Заархивированный вредоносный файл, предназначенный для сбоя или бесполезного чтения системой</li>
+        </ul>
+    </div>
+    <div class="hidden quest" id="quest6">
+        <label>Что такое спам?</label>
+        <ul>
+            <li><input required name="quest6" type="radio" value="1">Частная собственность</li>
+            <li><input required name="quest6" type="radio" value="2">Массовая рассылка незапрашиваемая получателем электронных сообщений коммерческого и некоммерческого содержания</li>
+            <li><input required name="quest6" type="radio" value="3">Сообщение другу</li>
+        </ul>
+    </div>
+    <div class="hidden quest" id="quest7">
+        <label>Какой из предложенных паролей лучше выбрать?</label>
+        <ul>
+            <li><input required name="quest7" type="radio" value="1">дата рождения</li>
+            <li><input required name="quest7" type="radio" value="2">12345</li>
+            <li><input required name="quest7" type="radio" value="3">No Hak!@q</li>
+        </ul>
+    </div>
+    <div class="hidden quest" id="quest8">
+        <label>Какую информацию о себе можно выкладывать в Интернете в открытом доступе?</label>
+        <ul>
+            <li><input required name="quest8" type="radio" value="1">Телефон родителей</li>
+            <li><input required name="quest8" type="radio" value="2">Номер карты</li>
+            <li><input required name="quest8" type="radio" value="3">О своих интересах</li>
+        </ul>
+    </div>
+    
+    <div class="hidden quest" id="quest9">
+        <label>Что делать, если вам пришло письмо о том, что вы выиграли в лотерее?</label>
+        <ul>
+            <li><input required name="quest9" type="radio" value="1">Написать в ответ разоблачающее письмо мошенникам</li>
+            <li><input required name="quest9" type="radio" value="2">Перейти по ссылке</li>
+            <li><input required name="quest9" type="radio" value="3">Удалить его и заблокировать отправителя</li>
+        </ul>
+    </div>
+    <div class="hidden quest" id="quest10">
+        <label>Как защититься от негативного контента?</label>
+        <ul>
+            <li><input required name="quest10" type="radio" value="1">Установить антивирус</li>
+            <li><input required name="quest10" type="radio" value="2">Использовать безопасный поиск Google и безопасный режим на YouTube</li>
+            <li><input required name="quest10" type="radio" value="3">Не обращать на него внимания</li>
+        </ul>
+    </div>
+    <button id="next">Продолжить</button>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

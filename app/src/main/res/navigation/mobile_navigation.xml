@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8" ?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -45,4 +45,14 @@
         android:name="com.example.netsecuirity.userFragment"
         android:label="Учётная запись ребёнка"
         tools:layout="@layout/fragment_user" />
+    <fragment
+        android:id="@+id/nopeFragment"
+        android:name="com.example.netsecuirity.nopeFragment"
+        android:label="Что нельзя публиковать в сети"
+        tools:layout="@layout/fragment_nope" />
+    <fragment
+        android:id="@+id/testFragment"
+        android:name="com.example.netsecuirity.testFragment"
+        android:label="Тест"
+        tools:layout="@layout/fragment_test" />
 </navigation>
